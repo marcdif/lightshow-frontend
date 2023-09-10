@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(16px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h3 {
+  margin: 20px 0;
+  text-align: left;
+}
+
+h3.red {
+  color: red;
+}
+
+h3.blue {
+  color: #222;
+  animation-name: flashTextBlue;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+h3.slowBlue {
+  color: #222;
+  animation-name: flashTextBlue;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+h3.green {
+  color: #4CAF50;
+}
+
+button.button-hidden {
+  display: none;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 25px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 48px;
+  margin: 50px 50px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button.red {
+  background-color: red;
+}
+
+button.blue {
+  background-color: #222;
+  animation-name: flashBackgroundBlue;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+button.slowBlue {
+  background-color: #222;
+  animation-name: flashBackgroundBlue;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flashBackgroundBlue {
+  0% {
+    background-color: #4285f4;
+  }
+  50% {
+    background-color: #3064ba;
+  }
+  100% {
+    background-color: #4285f4;
+  }
+}
+
+@keyframes flashTextBlue {
+  0% {
+    color: #4285f4;
+  }
+  50% {
+    color: #3064ba;
+  }
+  100% {
+    color: #4285f4;
+  }
+}
+
+button.green {
+  background-color: #4CAF50;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+[class*="table"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .table {
+    width: 1200px;
+  }
+}
+
+th {
+  background-color: #0b0d0f;
+}
+
+th, td {
+  padding: 18px;
+}
+
+tr:nth-child(odd) {
+  background-color: #16191d;
+}
+
+tr:nth-child(even) {
+  background-color: #21262c;
+}
+
+.startButton {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 38px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.startButton.red {
+  cursor: not-allowed;
+}
