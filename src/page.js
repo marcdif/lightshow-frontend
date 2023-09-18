@@ -5,7 +5,7 @@ import log from './utils'
 
 var classNames = require('classnames');
 const WebSocket = require('isomorphic-ws');
-const socketURL = "wss://home.marcdif.com:3925"
+const socketURL = "wss://syncserver.home.marcdif.com"
 var audioManager = new AudioManager();
 
 class Page extends React.Component {
